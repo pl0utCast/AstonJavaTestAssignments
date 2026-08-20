@@ -1,6 +1,6 @@
 import java.util.List;
 
-class Student{
+class Student {
     private String FIO;
     private List<Book> ownedBooks;
     public Student(String FIO, List<Book> ownedBooks) {

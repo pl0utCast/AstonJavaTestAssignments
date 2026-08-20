@@ -1,3 +1,5 @@
+
+
 void main() {
     List<Student> students;
     students = ReadFromFileRaw();
@@ -10,10 +12,8 @@ public List<Student> ReadFromFileRaw() {
     if (studFile.exists()) {
         try {
             Path path = Paths.get(filePathStr);
-            List<String> content = Files.readAllLines(path);
-            for (String item : content){
+            String jsonContent = Files.readString(path);
 
-            }
 
         } catch (IOException e) {
             System.out.println("File error");

@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-class Book{
+class Book {
     private String title;
     private int pgNum;
     private LocalDate publishDate;
