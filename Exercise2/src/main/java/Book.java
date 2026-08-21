@@ -12,7 +12,7 @@ class Book {
 
 
     public LocalDate getPublishDate() {
-        return LocalDate.parse(publishDate);  // стандартный ISO-формат
+        return LocalDate.parse(publishDate);
     }
 
     @Override
