@@ -1,54 +1,52 @@
-{
-  "Students": [
+[
     {
-      "Name": "Борискин Кирилл Эдуардович",
+      "fio": "Борискин Кирилл Эдуардович",
       "ownedBooks": [
-        { "name": "Град обреченный", "pages": 197, "publishDate": "1987-12-28" },
-        { "name": "Пикник на обочине", "pages": 256, "publishDate": "1986-05-15" },
-        { "name": "Трудно быть богом", "pages": 384, "publishDate": "1988-11-01" },
-        { "name": "Обитаемый остров", "pages": 448, "publishDate": "1989-03-20" },
-        { "name": "Хищные вещи века", "pages": 312, "publishDate": "1985-07-11" }
+        { "title": "Град обреченный", "pgNum": 197, "publishDate": "1987-12-28" },
+        { "title": "Пикник на обочине", "pgNum": 256, "publishDate": "1986-05-15" },
+        { "title": "Трудно быть богом", "pgNum": 384, "publishDate": "1988-11-01" },
+        { "title": "Обитаемый остров", "pgNum": 448, "publishDate": "1989-03-20" },
+        { "title": "Хищные вещи века", "pgNum": 312, "publishDate": "1985-07-11" }
       ]
     },
     {
-      "Name": "Иванова Анна Сергеевна",
+      "fio": "Иванова Анна Сергеевна",
       "ownedBooks": [
-        { "name": "Мастер и Маргарита", "pages": 416, "publishDate": "1967-07-07" },
-        { "name": "Преступление и наказание", "pages": 608, "publishDate": "1866-06-18" },
-        { "name": "Идиот", "pages": 640, "publishDate": "1869-01-25" },
-        { "name": "Бесы", "pages": 704, "publishDate": "1872-09-09" },
-        { "name": "Братья Карамазовы", "pages": 800, "publishDate": "1880-04-04" }
+        { "title": "Мастер и Маргарита", "pgNum": 416, "publishDate": "1967-07-07" },
+        { "title": "Преступление и наказание", "pgNum": 608, "publishDate": "1866-06-18" },
+        { "title": "Идиот", "pgNum": 640, "publishDate": "1869-01-25" },
+        { "title": "Бесы", "pgNum": 704, "publishDate": "1872-09-09" },
+        { "title": "Братья Карамазовы", "pgNum": 800, "publishDate": "1880-04-04" }
       ]
     },
     {
-      "Name": "Смирнов Алексей Владимирович",
+      "fio": "Смирнов Алексей Владимирович",
       "ownedBooks": [
-        { "name": "Война и мир", "pages": 1264, "publishDate": "1869-08-15" },
-        { "name": "Анна Каренина", "pages": 864, "publishDate": "1877-02-14" },
-        { "name": "Воскресение", "pages": 560, "publishDate": "1899-12-31" },
-        { "name": "Смерть Ивана Ильича", "pages": 112, "publishDate": "1886-06-06" },
-        { "name": "Крейцерова соната", "pages": 160, "publishDate": "1889-03-03" }
+        { "title": "Война и мир", "pgNum": 1264, "publishDate": "1869-08-15" },
+        { "title": "451° по Фаренгейту", "pgNum": 256, "publishDate": "2003-03-06" },
+        { "title": "Три товарища", "pgNum": 320, "publishDate": "2005-05-15" },
+        { "title": "Шантарам", "pgNum": 944, "publishDate": "2003-10-01" },
+        { "title": "Крейцерова соната", "pgNum": 160, "publishDate": "1889-03-03" }
       ]
     },
     {
-      "Name": "Петрова Екатерина Дмитриевна",
+      "fio": "Петрова Екатерина Дмитриевна",
       "ownedBooks": [
-        { "name": "Евгений Онегин", "pages": 320, "publishDate": "1833-05-05" },
-        { "name": "Герой нашего времени", "pages": 240, "publishDate": "1840-10-10" },
-        { "name": "Мертвые души", "pages": 416, "publishDate": "1842-08-08" },
-        { "name": "Ревизор", "pages": 144, "publishDate": "1836-07-07" },
-        { "name": "Тарас Бульба", "pages": 192, "publishDate": "1835-09-09" }
+        { "title": "Евгений Онегин", "pgNum": 320, "publishDate": "1833-05-05" },
+        { "title": "Герой нашего времени", "pgNum": 240, "publishDate": "1840-10-10" },
+        { "title": "Алхимик", "pgNum": 224, "publishDate": "1988-11-11" },
+        { "title": "Ревизор", "pgNum": 144, "publishDate": "1836-07-07" },
+        { "title": "Тарас Бульба", "pgNum": 192, "publishDate": "1835-09-09" }
       ]
     },
     {
-      "Name": "Кузнецов Денис Андреевич",
+      "fio": "Кузнецов Денис Андреевич",
       "ownedBooks": [
-        { "name": "Алхимик", "pages": 224, "publishDate": "1988-11-11" },
-        { "name": "Одиннадцать минут", "pages": 208, "publishDate": "2003-12-12" },
-        { "name": "Пятая гора", "pages": 288, "publishDate": "1996-01-01" },
-        { "name": "Дневник мага", "pages": 264, "publishDate": "1997-03-03" },
-        { "name": "Брида", "pages": 208, "publishDate": "1990-04-04" }
+        { "title": "Алхимик", "pgNum": 224, "publishDate": "1988-11-11" },
+        { "title": "Одиннадцать минут", "pgNum": 208, "publishDate": "2003-12-12" },
+        { "title": "Пятая гора", "pgNum": 288, "publishDate": "1996-01-01" },
+        { "title": "Дневник мага", "pgNum": 264, "publishDate": "1997-03-03" },
+        { "title": "Брида", "pgNum": 208, "publishDate": "1990-04-04" }
       ]
     }
-  ]
-}
+]

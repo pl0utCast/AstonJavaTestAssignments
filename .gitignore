@@ -32,3 +32,6 @@ bin/
 .idea
 
 .gradle
+
+build/
+**/build
