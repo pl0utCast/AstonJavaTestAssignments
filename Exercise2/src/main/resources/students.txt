@@ -1,0 +1,52 @@
+[
+    {
+      "fio": "Борискин Кирилл Эдуардович",
+      "ownedBooks": [
+        { "title": "Град обреченный", "pgNum": 197, "publishDate": "1987-12-28" },
+        { "title": "Пикник на обочине", "pgNum": 256, "publishDate": "1986-05-15" },
+        { "title": "Трудно быть богом", "pgNum": 384, "publishDate": "1988-11-01" },
+        { "title": "Обитаемый остров", "pgNum": 448, "publishDate": "1989-03-20" },
+        { "title": "Хищные вещи века", "pgNum": 312, "publishDate": "1985-07-11" }
+      ]
+    },
+    {
+      "fio": "Иванова Анна Сергеевна",
+      "ownedBooks": [
+        { "title": "Мастер и Маргарита", "pgNum": 416, "publishDate": "1967-07-07" },
+        { "title": "Преступление и наказание", "pgNum": 608, "publishDate": "1866-06-18" },
+        { "title": "Идиот", "pgNum": 640, "publishDate": "1869-01-25" },
+        { "title": "Бесы", "pgNum": 704, "publishDate": "1872-09-09" },
+        { "title": "Братья Карамазовы", "pgNum": 800, "publishDate": "1880-04-04" }
+      ]
+    },
+    {
+      "fio": "Смирнов Алексей Владимирович",
+      "ownedBooks": [
+        { "title": "Война и мир", "pgNum": 1264, "publishDate": "1869-08-15" },
+        { "title": "451° по Фаренгейту", "pgNum": 256, "publishDate": "2003-03-06" },
+        { "title": "Три товарища", "pgNum": 320, "publishDate": "2005-05-15" },
+        { "title": "Шантарам", "pgNum": 944, "publishDate": "2003-10-01" },
+        { "title": "Крейцерова соната", "pgNum": 160, "publishDate": "1889-03-03" }
+      ]
+    },
+    {
+      "fio": "Петрова Екатерина Дмитриевна",
+      "ownedBooks": [
+        { "title": "Евгений Онегин", "pgNum": 320, "publishDate": "1833-05-05" },
+        { "title": "Герой нашего времени", "pgNum": 240, "publishDate": "1840-10-10" },
+        { "title": "Алхимик", "pgNum": 224, "publishDate": "1988-11-11" },
+        { "title": "Ревизор", "pgNum": 144, "publishDate": "1836-07-07" },
+        { "title": "Тарас Бульба", "pgNum": 192, "publishDate": "1835-09-09" }
+      ]
+    },
+    {
+      "fio": "Кузнецов Денис Андреевич",
+      "ownedBooks": [
+        { "title": "Алхимик", "pgNum": 224, "publishDate": "1988-11-11" },
+        { "title": "Одиннадцать минут", "pgNum": 208, "publishDate": "2003-12-12" },
+        { "title": "Пятая гора", "pgNum": 288, "publishDate": "1996-01-01" },
+        { "title": "Дневник мага", "pgNum": 264, "publishDate": "1997-03-03" },
+        { "title": "Брида", "pgNum": 208, "publishDate": "1990-04-04" }
+      ]
+    }
+]
