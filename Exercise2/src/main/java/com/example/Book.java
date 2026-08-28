@@ -1,7 +1,9 @@
+package com.example;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
-class Book {
+public class Book {
     private String title;
     private int pgNum;
     private String publishDate;
