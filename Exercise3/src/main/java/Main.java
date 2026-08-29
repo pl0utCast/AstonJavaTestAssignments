@@ -4,16 +4,20 @@ import ChainOfResponsibility.*;
 import Strategy.JsonReader;
 import Strategy.StudentService;
 import Strategy.TxtReader;
+import Strategy.CsvReader;
 import Builder.ConcreteServer;
 import Decorator.LoggingServerDecorator;
+import ProxyPattern.ProxyServer;
 
 
 static void main() {
     System.out.println("Strategy usage");
-    StudentService studentService1 = new StudentService(new JsonReader());
-    studentService1.readFile();
-    StudentService studentService2 = new StudentService(new TxtReader());
-    studentService2.readFile();
+    StudentService studentServiceJson = new StudentService(new JsonReader());
+    studentServiceJson.readFile();
+    StudentService studentServiceTxt = new StudentService(new TxtReader());
+    studentServiceTxt.readFile();
+    StudentService studentServiceCsv = new StudentService(new CsvReader());
+    studentServiceCsv.readFile();
 
     System.out.println("\nBuilder usage");
     ConcreteServer server = ConcreteServer.builder()
@@ -24,9 +28,9 @@ static void main() {
     server.stop();
 
     System.out.println("\nProxy usage");
-    ProxyPattern.ProxyServer serverProxy = new ProxyPattern.ProxyServer(server);
+    ProxyServer serverProxy = new ProxyServer(server);
     serverProxy.run();
-    server.stop();
+    serverProxy.stop();
 
     System.out.println("\nDecorator usage");
     LoggingServerDecorator loggingServer = new LoggingServerDecorator(server);

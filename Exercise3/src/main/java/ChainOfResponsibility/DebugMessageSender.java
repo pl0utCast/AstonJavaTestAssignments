@@ -8,6 +8,6 @@ public class DebugMessageSender extends MessageSender {
 
     @Override
     public void write(String message) {
-        System.out.println("Debug message" + message);
+        System.out.println("Debug message: " + message);
     }
 }

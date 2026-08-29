@@ -8,6 +8,6 @@ public class ErrorMessageSender extends MessageSender {
 
     @Override
     public void write(String message) {
-        System.out.println("Error message" + message);
+        System.out.println("Error message: " + message);
     }
 }

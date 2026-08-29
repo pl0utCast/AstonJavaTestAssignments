@@ -1,6 +1,6 @@
 package Builder;
 
-public class ConcreteServer implements Server{
+public class ConcreteServer implements Server {
     private final String ip;
     private final String port;
 
@@ -17,11 +17,11 @@ public class ConcreteServer implements Server{
         System.out.println("Server running on " + ip + ":" + port);
     }
 
-    public void stop(){
+    public void stop() {
         System.out.println("Server was stopped");
     }
 
-    public static class Builder implements ServerBuilder<ConcreteServer>{
+    public static class Builder implements ServerBuilder<ConcreteServer> {
         private String ip;
         private String port;
 
