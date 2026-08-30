@@ -3,3 +3,4 @@ rootProject.name = 'AstonJavaTestAssigments'
 include('Exercise1')
 include('Exercise2')
 include 'Exercise3'
+include 'Exercise4'
