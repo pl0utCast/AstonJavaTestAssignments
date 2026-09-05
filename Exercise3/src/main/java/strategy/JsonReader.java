@@ -1,14 +1,14 @@
-package Strategy;
+package strategy;
 
 import com.example.Student;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TxtReader implements ReadStrategy {
+public class JsonReader implements ReadStrategy {
     public List<Student> readFile() {
         List<Student> studentsOut = new ArrayList<Student>();
-        System.out.println("Read txt file");
+        System.out.println("Read JSON file");
         return studentsOut;
     }
 }

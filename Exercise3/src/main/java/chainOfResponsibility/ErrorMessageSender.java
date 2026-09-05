@@ -1,4 +1,4 @@
-package ChainOfResponsibility;
+package chainOfResponsibility;
 
 public class ErrorMessageSender extends MessageSender {
 

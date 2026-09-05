@@ -1,6 +1,6 @@
-package Adapter;
+package adapter;
 
-import Builder.Server;
+import builder.Server;
 
 public class LegacyServerAdapter implements Server {
     LegacyServer legacyServer = new LegacyServer();

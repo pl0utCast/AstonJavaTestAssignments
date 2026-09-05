@@ -1,13 +1,13 @@
-import Adapter.LegacyServer;
-import Adapter.LegacyServerAdapter;
-import ChainOfResponsibility.*;
-import Strategy.JsonReader;
-import Strategy.StudentService;
-import Strategy.TxtReader;
-import Strategy.CsvReader;
-import Builder.ConcreteServer;
-import Decorator.LoggingServerDecorator;
-import ProxyPattern.ProxyServer;
+import adapter.LegacyServer;
+import adapter.LegacyServerAdapter;
+import chainOfResponsibility.*;
+import strategy.JsonReader;
+import strategy.StudentService;
+import strategy.TxtReader;
+import strategy.CsvReader;
+import builder.ConcreteServer;
+import decorator.LoggingServerDecorator;
+import proxyPattern.ProxyServer;
 
 
 static void main() {
@@ -21,8 +21,8 @@ static void main() {
 
     System.out.println("\nBuilder usage");
     ConcreteServer server = ConcreteServer.builder()
-            .setIp("127.0.0.1")
-            .setPort("8080")
+            .ip("127.0.0.1")
+            .port("8080")
             .build();
     server.run();
     server.stop();

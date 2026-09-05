@@ -1,6 +1,6 @@
-package Decorator;
+package decorator;
 
-import Builder.Server;
+import builder.Server;
 
 public class LoggingServerDecorator extends ServerDecorator {
 

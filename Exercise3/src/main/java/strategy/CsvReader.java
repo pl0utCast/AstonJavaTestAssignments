@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 import com.example.Student;
 
