@@ -1,4 +1,4 @@
-package DeadLock;
+package deadLock;
 
 import java.util.List;
 

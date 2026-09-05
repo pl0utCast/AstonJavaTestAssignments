@@ -1,6 +1,4 @@
-package OneTwoPrint;
-
-import OneTwoPrint.OneTwoPrinter;
+package oneTwoPrint;
 
 public class OneTwoPrintExample{
     void main() {

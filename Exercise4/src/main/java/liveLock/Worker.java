@@ -1,4 +1,4 @@
-package LiveLock;
+package liveLock;
 
 public class Worker extends Thread {
     private Worker coworker;

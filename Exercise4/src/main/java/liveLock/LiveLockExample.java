@@ -1,4 +1,4 @@
-package LiveLock;
+package liveLock;
 
 public class LiveLockExample {
     public static void main(String[] args) {

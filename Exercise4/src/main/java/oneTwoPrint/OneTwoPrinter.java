@@ -1,4 +1,4 @@
-package OneTwoPrint;
+package oneTwoPrint;
 
 public class OneTwoPrinter {
     private static final Object lock = new Object();
