@@ -23,7 +23,8 @@ public class ThreadTwo extends Thread {
             System.out.println("lock1 locked");
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException interruptedException) {}
+            } catch (InterruptedException interruptedException) {
+            }
             synchronized (lock1) {
                 list2.add(1);
             }

@@ -1,6 +1,6 @@
 package oneTwoPrint;
 
-public class OneTwoPrintExample{
+public class OneTwoPrintExample {
     void main() {
         OneTwoPrinter.printDigits();
     }

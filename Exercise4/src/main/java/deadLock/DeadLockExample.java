@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DeadLockExample {
-    public void main(){
+    public void main() {
         final Object lock1 = new Object();
         final Object lock2 = new Object();
 

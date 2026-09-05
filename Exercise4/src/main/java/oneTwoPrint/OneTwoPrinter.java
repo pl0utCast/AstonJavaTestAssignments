@@ -19,7 +19,7 @@ public class OneTwoPrinter {
         });
 
         Thread twoPrinter = new Thread(() -> {
-            while (true){
+            while (true) {
                 synchronized (lock) {
                     while (!printOne) {
                         System.out.print("2");
