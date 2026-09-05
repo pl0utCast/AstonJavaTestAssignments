@@ -1,6 +1,8 @@
+package com.example;
+
 import java.util.List;
 
-class Student {
+public class Student {
     private String fio;
     private List<Book> ownedBooks;
 
