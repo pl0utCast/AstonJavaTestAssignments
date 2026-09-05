@@ -2,8 +2,9 @@ package LiveLock;
 
 public class Worker extends Thread {
     private Worker coworker;
-    private boolean active = false;
-    private int workProgress = 0;
+    private boolean hasResource1 = false;
+    private boolean hasResource2 = false;
+    private boolean done = false;
 
     public Worker(String name, Worker coworker) {
         super(name);
@@ -14,33 +15,47 @@ public class Worker extends Thread {
         this.coworker = coworker;
     }
 
-    private void doWork() {
-        workProgress++;
-        System.out.println(getName() + ": СДЕЛАЛ РАБОТУ! #" + workProgress);
+    public void setHasResource1(boolean has) {
+        this.hasResource1 = has;
+    }
+
+    public void setHasResource2(boolean has) {
+        this.hasResource2 = has;
+    }
+
+    public boolean isDone() {
+        return done;
     }
 
     @Override
     public void run() {
-        while (workProgress < 10) {
-            if (active && !coworker.active) {
-                System.out.println(getName() + ": я активен, но " + coworker.getName() + " неактивен, уступаю");
-                active = false;
-                coworker.active = true;
-            } else if (!active && coworker.active) {
-                System.out.println(getName() + ": жду пока " + coworker.getName() + " уступит");
-            } else if (active && coworker.active) {
-                System.out.println(getName() + ": оба активны, пытаюсь сделать работу...");
-                active = false;
-                coworker.active = false;
-                System.out.println(getName() + ": решил уступить, становлюсь неактивным");
-            } else {
-                System.out.println(getName() + ": оба неактивны, становлюсь активным!");
-                active = true;
-                coworker.active = false;
+        while (!done) {
+            if (hasResource1 && hasResource2) {
+                System.out.println(getName() + ": СДЕЛАЛ РАБОТУ!");
+                done = true;
+                break;
             }
 
-            if (active && coworker.active) {
-                doWork();
+            if (hasResource1 && !hasResource2) {
+                System.out.println(getName() + ": у меня ресурс1, прошу у " + coworker.getName() + " ресурс2");
+                if (coworker.hasResource2 && !coworker.hasResource1) {
+                    hasResource1 = false;
+                    coworker.setHasResource1(true);
+                    hasResource2 = true;
+                    coworker.setHasResource2(false);
+                    System.out.println(getName() + ": обменялся! Теперь у меня ресурс2");
+                }
+            }
+
+            if (!hasResource1 && hasResource2) {
+                System.out.println(getName() + ": у меня ресурс2, прошу у " + coworker.getName() + " ресурс1");
+                if (coworker.hasResource1 && !coworker.hasResource2) {
+                    hasResource2 = false;
+                    coworker.setHasResource2(true);
+                    hasResource1 = true;
+                    coworker.setHasResource1(false);
+                    System.out.println(getName() + ": обменялся! Теперь у меня ресурс1");
+                }
             }
 
             try {
