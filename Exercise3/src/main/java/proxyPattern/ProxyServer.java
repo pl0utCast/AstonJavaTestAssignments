@@ -1,6 +1,6 @@
-package ProxyPattern;
+package proxyPattern;
 
-import Builder.ConcreteServer;
+import builder.ConcreteServer;
 
 public class ProxyServer {
     final ConcreteServer realServer;

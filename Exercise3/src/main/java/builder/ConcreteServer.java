@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 public class ConcreteServer implements Server {
     private final String ip;
@@ -25,12 +25,12 @@ public class ConcreteServer implements Server {
         private String ip;
         private String port;
 
-        public Builder setIp(String ip) {
+        public Builder ip(String ip) {
             this.ip = ip;
             return this;
         }
 
-        public Builder setPort(String port) {
+        public Builder port(String port) {
             this.port = port;
             return this;
         }
